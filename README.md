@@ -1,4 +1,4 @@
-本python目录主要用于一些python脚本
+本python目录主要用于存放一些python脚本
 
 1、pexpect为pexpect类脚本，包括pxssh远程连接；
 

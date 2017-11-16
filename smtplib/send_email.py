@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
+"""
+本脚主要实现python自动发送邮件到指定邮箱,
+其多用于监控系统时发送警告或者通知给系统
+管理员，这样系统管理员就能及时地了解系统
+的状况。
+"""
+
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header

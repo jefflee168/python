@@ -6,4 +6,4 @@
 
 3、MySQLdb类目录主要存放python操作mysql数据库的脚本；
 
-4、xlsx主要存放python操作xlsx表示的脚本；
+4、xlsx主要存放python操作xlsx表格的脚本；

@@ -8,4 +8,4 @@
 
 4、xlsx主要存放python操作xlsx表格的脚本；
 
-5、通过pycurl可实现web服务质量的探测，比如响应的HTTP状态码、请求延时、HTTP头信息和下载速度等。ubuntu16安装pycurl时先安装依赖软件包 libcurl4-openssl-dev 和 libssl-dev。
+5、通过pycurl可实现web服务质量的探测，比如响应的HTTP状态码、请求延时、HTTP头信息和下载速度等。ubuntu16安装pycurl时先安    装依赖软件包 libcurl4-openssl-dev 和 libssl-dev。

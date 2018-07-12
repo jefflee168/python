@@ -6,22 +6,24 @@
 from fabric.api import *
 
 env.roledefs = {
-    'server1': ['192.168.1.76'],
-    'server2': ['192.168.1.204'],
+    'node1': ['10.0.0.27'],
+    'node2': ['10.0.0.28']
 }
 
 env.passwords = {
-    'jeff@192.168.1.76:22': 'redhat',
-    'biliang@192.168.1.204:22': 'pzzh123456',
+    'jeff@10.0.0.27:22': 'redhat',
+    'jeff@10.0.0.28:22': 'redhat'
 }
 
-@roles('server1')
+@roles('node1')
 def task1():
-    run('ip addr show')
+    with settings(warn_only=True):
+        run('hostname')
 
-@roles('server2')
+@roles('node2')
 def task2():
-    run('hostname')
+    with settings(warn_only=True):
+        run('hostname')
 
 def deploy():
     execute(task1)
